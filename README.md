@@ -20,7 +20,7 @@ Check missing values, unique values by row, data type for each row etc. There we
 
 # Feature Engineering
 Following new features are created:
-###	Last_Quarterly_Rating
+* Last_Quarterly_Rating
 ###	Tenure_months: No. of months in the organization (‘existing’: 12-2017 – Dateofjoining; ‘Churned’ = LastWorkingDate – Dateofjoining)
 ###	Designation = Current Designation/Last designation before churn
 ###	Promotion = No.  of promotion taken in org (Designation – Joiningdesignation )
