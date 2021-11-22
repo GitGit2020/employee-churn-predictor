@@ -9,14 +9,13 @@ To aid staffing, you are provided with the monthly information for a segment of 
 Demographics of the employee (city, age, gender etc.)
 Tenure information (joining date, Last Date)
 Historical data regarding the performance of the employee (Quarterly rating, Monthly business acquired, designation, salary)
-Private Leaderboard Rank - 1
-Public Leaderboard Rank - 3
+
 
 # Approach
 Formulating the problem as a binary classfication problem. Selection and synthesis of important features was key.
 
 # EDA 
-Check missing values, unique values by row, data type for each row etc. There were no missing values e
+Check missing values, unique values by row, data type for each row etc. There were no missing values except the LastWorkingDate feature.
 
 # Feature Engineering
 Following new features are created:
@@ -31,6 +30,7 @@ Existing Features :
 * City
 * Age
 * Education 
+
 Encoding/Feature Transformations
 * One-hot Encoding – Gender, City & Education
 * Label: Last_Quarterly_Rating, Designation, Promotion
