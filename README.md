@@ -20,25 +20,26 @@ Check missing values, unique values by row, data type for each row etc. There we
 
 # Feature Engineering
 Following new features are created:
-#	Last_Quarterly_Rating
-#	Tenure_months: No. of months in the organization (‘existing’: 12-2017 – Dateofjoining; ‘Churned’ = LastWorkingDate – Dateofjoining)
-#	Designation = Current Designation/Last designation before churn
-#	Promotion = No.  of promotion taken in org (Designation – Joiningdesignation )
-#	Avg_Quarterly_Business = Average Total Business Value for each employee per quarter
+###	Last_Quarterly_Rating
+###	Tenure_months: No. of months in the organization (‘existing’: 12-2017 – Dateofjoining; ‘Churned’ = LastWorkingDate – Dateofjoining)
+###	Designation = Current Designation/Last designation before churn
+###	Promotion = No.  of promotion taken in org (Designation – Joiningdesignation )
+###	Avg_Quarterly_Business = Average Total Business Value for each employee per quarter
 Existing Features : Gender, City, Age and Education 
 Encoding/Feature Transformations
 
-#	One-hot Encoding – Gender, City & Education
-#	Label: Last_Quarterly_Rating, Designation, Promotion
-#	MinmaxScaler – Avg_Quarterly_Business, Tenure_Months, Age
+###	One-hot Encoding – Gender, City & Education
+###	Label: Last_Quarterly_Rating, Designation, Promotion
+###	MinmaxScaler – Avg_Quarterly_Business, Tenure_Months, Age
 
 # Model Building
 Models used :
-#	Logistic Regression (Baseline)
-#	Bagging : Random Forest
-#	Boosting : GradientBoost, XGBoost, LightGBM, Catboost
+###	Logistic Regression (Baseline)
+###	Bagging : Random Forest
+###	Boosting : GradientBoost, XGBoost, LightGBM, Catboost
 
 # Model Selection:
-# 10-fold cross validation (LightGBM selected due to highest F1-score, avg 0.88 in training set)
+K-fold crossvalidation
+### 10-fold cross validation (LightGBM selected due to highest F1-score, avg 0.88 in training set)
 
 
